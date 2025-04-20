@@ -117,5 +117,5 @@ df = pd.DataFrame(data)
 # 💾 Step 4: Save with folder and date-based filename
 os.makedirs("Data", exist_ok=True)
 today_str = datetime.now().strftime("%Y-%m-%d")
-df.to_csv(f"Data/news_data_{today_str}.csv", index=False)
+df.to_csv(f"data/news_data_{today_str}.csv", index=False)
 print(f"✅ Scraping complete. Saved {len(df)} articles to Data/news_data_{today_str}.csv")
